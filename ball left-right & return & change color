@@ -1,0 +1,19 @@
+int a = 0;
+int blau=255;
+ 
+void setup() {
+  size(400, 400);
+}
+
+void draw() {
+  blau=blau-1;
+  if (blau<0) {
+    blau=255;
+  }
+  background(0);
+  a = a + 1;
+  if (a>400) {a=1;
+  }         
+  fill(0, 0, blau);          
+  ellipse(a, 200, 50, 50); 
+}
