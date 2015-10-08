@@ -1,0 +1,15 @@
+int x=0;
+int a=1;
+
+void setup() {
+  size(500, 400);
+}
+
+void draw() {
+  background(0);
+   x = x + a;
+
+ 
+  fill(0, 0, 255);          
+  ellipse(x, 200, 50, 50); 
+}
