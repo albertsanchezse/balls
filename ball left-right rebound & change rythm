@@ -1,0 +1,23 @@
+int x=0;
+int a=1;
+
+void setup() {
+  size(500, 400);
+}
+
+void draw() {
+  background(0);
+   x = x + a;
+  
+  if (x>500) {a=-1;
+  }
+  
+  if (x<0) {a=+1;
+  }
+  
+  if (x==250) {a = a*5;
+  }
+  
+  fill(0, 0, 255);          
+  ellipse(x, 200, 50, 50); 
+}
